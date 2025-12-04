@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct GeminiRespField: View {
+    @StateObject private var transvm = TranslatorViewModel()
+    //@ObservedObject var transvm: TranslatorViewModel
     @State var text: String = "Gemini Response here"
     var body: some View {
         ZStack{
-            
             Rectangle()
                 .frame(width: 330, height: 200)
                 .foregroundColor(.blue)
                 .cornerRadius(20)
-            Text(text)
+            Text(transvm.explanationn)
         }
-        
+        .onAppear {
+            transvm.getExplanation(for: "Camarón que se duerme, se lo lleva la corriente")
+        }
     }
 }
 

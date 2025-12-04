@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var transvm = TranslatorViewModel()
     var body: some View {
         VStack{
-            AppTextFieldView()
+            AppTextFieldView{ prompt in
+                transvm.getExplanation(for: prompt)
+            }
                 .padding()
-            GeminiRespField(text: "abduzcan")
-        }
+            GeminiRespField()
+        } //Bocca al lupo
+
         
         
     }

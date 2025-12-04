@@ -9,13 +9,17 @@ import SwiftUI
 
 struct AppTextFieldView: View {
     @State private var text: String = ""
-
+    var onSubmit: (String) -> Void
     var body: some View {
         VStack {
             //Text("Hello, World!")
             HStack {
                 //Image(systemName: "person")
                 TextField("Write your idiom...", text: $text)
+                    .onSubmit{
+                        onSubmit(text)
+                        text = ""
+                    }
             }
             .padding()
             .frame(width: 330, height: 200)
@@ -25,5 +29,8 @@ struct AppTextFieldView: View {
 }
 
 #Preview {
-    AppTextFieldView()
+    AppTextFieldView{ prompt in
+        print("You typed: \(prompt)")
+        
+    }
 }
