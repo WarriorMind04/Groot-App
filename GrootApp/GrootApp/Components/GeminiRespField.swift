@@ -18,6 +18,7 @@ struct GeminiRespField: View {
                 .foregroundColor(.blue)
                 .cornerRadius(20)
             Text(transvm.explanationn)
+                .padding()
         }
         .onAppear {
             transvm.getExplanation(for: "Camarón que se duerme, se lo lleva la corriente")

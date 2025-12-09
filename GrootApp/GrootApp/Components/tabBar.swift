@@ -17,6 +17,9 @@ struct tabBar: View {
             FavsView().tabItem {
                 Label("Favs", systemImage: "heart.fill")
             }.tag(2)
+            PractiveView().tabItem {
+                Label("Practice", systemImage: "pencil.and.outline")
+            }.tag(3)
         }
     }
 }
