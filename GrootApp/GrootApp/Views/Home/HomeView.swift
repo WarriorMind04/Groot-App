@@ -15,7 +15,7 @@ struct HomeView: View {
                 transvm.getExplanation(for: prompt)
             }
                 .padding()
-            GeminiRespField()
+            GeminiRespField(transvm: transvm)
         } //Bocca al lupo
 
         

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GeminiRespField: View {
-    @StateObject private var transvm = TranslatorViewModel()
-    //@ObservedObject var transvm: TranslatorViewModel
+    //@StateObject private var transvm = TranslatorViewModel()
+    @ObservedObject var transvm: TranslatorViewModel
     @State var text: String = "Gemini Response here"
     var body: some View {
         ZStack{
@@ -25,6 +25,7 @@ struct GeminiRespField: View {
     }
 }
 
-#Preview {
+/*#Preview {
     GeminiRespField()
 }
+*/
