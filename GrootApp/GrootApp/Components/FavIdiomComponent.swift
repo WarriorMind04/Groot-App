@@ -30,19 +30,33 @@ struct FavIdiomComponent: View {
                         .bold()
                     Divider()
                         //.padding()
+                        .foregroundStyle(Color.blueSecondary)
                         .frame(width: 100)
+                       
                     
                     Text("Camarón que se duerme...")
                         .foregroundColor(.black)
-                        .font(.caption)
+                        .font(.title3)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
+                Image(systemName: "equal")
+                    .foregroundColor(.blueSecondary)
+                    .font(.system(size: 30))
+                    
                 VStack{
                     Text("English")
                         .foregroundColor(.black)
                         .bold()
+                    Divider()
+                        .frame(width: 100)
                     Text("Camarón que se duerme...")
                         .foregroundColor(.black)
-                        .font(.caption)
+                        .font(.title3)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
                
             }
