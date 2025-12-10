@@ -9,7 +9,11 @@ import SwiftUI
 
 struct FavsView: View {
     var body: some View {
-        Text("Favs Idioms!")
+        ScrollView{
+            FavIdiomComponent()
+            FavIdiomComponent()
+            FavIdiomComponent()
+        }
     }
 }
 

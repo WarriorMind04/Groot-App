@@ -9,11 +9,12 @@ import SwiftUI
 
 struct PractiveView: View {
     var body: some View {
-        ScrollView{
+        /*ScrollView{
             FavIdiomComponent()
             FavIdiomComponent()
             FavIdiomComponent()
-        }
+        }*/
+        FlashCards()
         
     }
 }
