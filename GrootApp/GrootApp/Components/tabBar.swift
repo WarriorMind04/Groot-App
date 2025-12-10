@@ -10,16 +10,24 @@ import SwiftUI
 struct tabBar: View {
     var body: some View {
         
-        TabView() {
-            HomeView().tabItem {
-                Label("Home", systemImage: "house.fill")
-            }.tag(1)
-            FavsView().tabItem {
-                Label("Favs", systemImage: "heart.fill")
-            }.tag(2)
-            PractiveView().tabItem {
-                Label("Practice", systemImage: "pencil.and.outline")
-            }.tag(3)
+        TabView {
+            NavigationStack {
+                HomeView()
+                    .navigationTitle("Home")
+            }
+            .tabItem { Label("Home", systemImage: "house.fill") }
+
+            NavigationStack {
+                FavsView()
+                    .navigationTitle("Favorites")
+            }
+            .tabItem { Label("Favs", systemImage: "heart.fill") }
+
+            NavigationStack {
+                PractiveView()
+                    .navigationTitle("Practice")
+            }
+            .tabItem { Label("Practice", systemImage: "pencil.and.outline") }
         }
     }
 }

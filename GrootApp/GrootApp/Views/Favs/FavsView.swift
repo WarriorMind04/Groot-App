@@ -14,6 +14,7 @@ struct FavsView: View {
             FavIdiomComponent()
             FavIdiomComponent()
         }
+        
     }
 }
 
