@@ -8,42 +8,23 @@
 import SwiftUI
 
 struct FrontCard: View {
+    //let explanation: Explanation
     var body: some View {
-            VStack(spacing: 20) {
-                Text("Meaning:")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundStyle(Color.black)
-
-                Text("A playful way to tell someone to get started.")
-                    .font(.body.italic())
-                    .padding(.horizontal)
-                    .foregroundStyle(Color.black)
-                Text("Example:")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundStyle(Color.black)
-
-                Text("Let's get this show on the road!")
-                    .font(.body.italic())
-                    .padding(.horizontal)
-                    .foregroundStyle(Color.black)
-
-                HStack(spacing: 1) {
-                    Image("CactusMX")
-                        .resizable()
-                        .frame(width: 80, height: 100)
-                    Image("CactusMX")
-                        .resizable()
-                        .frame(width: 120, height: 150)
-                    Image("CactusMX")
-                        .resizable()
-                        .frame(width: 80, height: 100)
-                }
-            }
+            Image(systemName: "questionmark")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 300, height: 300)
+            .foregroundStyle(Color.blue)
         }
 }
 
+
 #Preview {
-    FrontCard()
+    FrontCard(
+        /*explanation: Explanation(
+            meaning: "A playful way to tell someone to get started.",
+            example: "Let's get this show on the road!",
+            image: "CactusMX"
+        )*/
+    )
 }

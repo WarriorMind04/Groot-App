@@ -18,16 +18,16 @@ struct tabBar: View {
             .tabItem { Label("Home", systemImage: "house.fill") }
 
             NavigationStack {
-                FavsView()
-                    .navigationTitle("Favorites")
+                FunFactsView()
+                    .navigationTitle("Fun Facts")
             }
-            .tabItem { Label("Favs", systemImage: "heart.fill") }
+            .tabItem { Label("Fun Facts", systemImage: "doc.questionmark.fill") }
 
             NavigationStack {
-                PractiveView()
-                    .navigationTitle("Practice")
+                CultureView()
+                    .navigationTitle("Culture")
             }
-            .tabItem { Label("Practice", systemImage: "pencil.and.outline") }
+            .tabItem { Label("Culture", systemImage: "globe.americas.fill") }
         }
     }
 }

@@ -15,7 +15,7 @@ struct AppTextFieldView: View {
             //Text("Hello, World!")
             HStack {
                 //Image(systemName: "person")
-                TextField("Write your idiom...", text: $text)
+                TextField("Write your cultural question here...", text: $text)
                     .onSubmit{
                         onSubmit(text)
                         text = ""
