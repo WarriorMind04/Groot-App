@@ -16,8 +16,16 @@ struct BackCard: View {
                         .foregroundColor(.blue)
                         .opacity(0.3)
                     
-                    Text("A darle que es mole de olla")
-                        .foregroundStyle(Color.black)
+                    VStack{
+                        Text("Challenge")
+                            .font(.largeTitle)
+                            .foregroundStyle(Color.black)
+                        Text("Go and ask for a coffe in italian!")
+                            .font(.callout)
+                            .foregroundStyle(Color.black)
+                        
+                    }
+                    
                 }
                 
             }

@@ -6,11 +6,26 @@
 //
 
 import SwiftUI
+import Combine
 
 struct timer: View {
+    @State var timeRemaining = 100
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        HStack{
+            Text("You have:")
+            Text("\(timeRemaining)")
+                        .onReceive(timer) { _ in
+                            if timeRemaining > 0 {
+                                timeRemaining -= 1
+                            }
+                        }
+                        .bold()
+                        .font(.largeTitle)
+                        .padding() 
+            Text("seconds left")
+        }
+           }
 }
 
 #Preview {
