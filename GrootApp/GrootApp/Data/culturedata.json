@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Places",
+      "description": "Famous places in Japan",
+      "culture": "Japanese",
+      "country": "Japan",
+      "imageName": "japan_places",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Tokyo Tower",
+          "content": "An iconic landmark in Tokyo.",
+          "imageName": "tokyo_tower"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Food",
+      "description": "Traditional Japanese food",
+      "culture": "Japanese",
+      "country": "Japan",
+      "imageName": "japan_food",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Sushi",
+          "content": "Sushi is a traditional Japanese dish.",
+          "imageName": "sushi"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Music",
+      "description": "Traditional Japanese music",
+      "culture": "Japanese",
+      "country": "Japan",
+      "imageName": "japan_music",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Koto",
+          "content": "A traditional string instrument.",
+          "imageName": "koto"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Places",
+      "description": "Famous places in Italy",
+      "culture": "Italian",
+      "country": "Italy",
+      "imageName": "italy_places",
+      "sections": [
+        {
+          "id": 1,
+          "title": "Colosseum",
+          "content": "Iconic landmark in Rome.",
+          "imageName": "colosseum"
+        }
+      ]
+    }
+  ]
+}

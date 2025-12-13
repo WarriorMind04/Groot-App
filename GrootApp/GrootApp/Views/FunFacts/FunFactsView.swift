@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct FunFactsView: View {
+    @State private var viewModel = FunFactsViewModel()
+    
     var body: some View {
-        VStack {
-            Spacer()
-            FunFact()
-            Spacer()
-            Text("1/20")
-            Image(systemName: "square.and.arrow.up.fill")
-                .resizable()
-                .frame(width: 35, height: 40)
+        ScrollView(.vertical) {
+                    LazyVStack(spacing: 0) {
+                        ForEach(viewModel.funFacts) { fact in
+                            FunFactCard(
+                                fact: fact,
+                                readCount: viewModel.funFactsRead
+                            )
+                            .frame(height: UIScreen.main.bounds.height)
+                            .onAppear {
+                                viewModel.markAsRead(fact)
+                            }
+                        }
+                    }
+                }
+                .scrollIndicators(.hidden)
+                .scrollTargetBehavior(.paging)
+                .ignoresSafeArea()
         }
         
-    }
+        
 }
 
 #Preview {
