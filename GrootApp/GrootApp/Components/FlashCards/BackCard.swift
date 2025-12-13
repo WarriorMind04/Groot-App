@@ -8,26 +8,45 @@
 import SwiftUI
 
 struct BackCard: View {
+    
+    @State private var viewModel = BackCardViewModel()
     var body: some View {
             VStack(spacing: 20) {
                 ZStack {
                     Circle()
                         .frame(width: 300, height: 300)
-                        .foregroundColor(.blue)
+                        .foregroundColor(colorForType)
                         .opacity(0.3)
                     
                     VStack{
-                        Text("Challenge")
+                        Text(viewModel.currentContent?.title ?? "")
                             .font(.largeTitle)
                             .foregroundStyle(Color.black)
-                        Text("Go and ask for a coffe in italian!")
+                        Text(viewModel.currentContent?.text ?? "")
                             .font(.callout)
+                            .multilineTextAlignment(.center)
                             .foregroundStyle(Color.black)
+                            .padding(.horizontal)
                         
                     }
                     
                 }
                 
+            }
+            .onAppear {
+                        viewModel.randomize()
+                    }
+        }
+    private var colorForType: Color {
+            switch viewModel.currentContent?.type {
+            case .challenge:
+                return .blue
+            case .funFact:
+                return .green
+            case .suggestion:
+                return .orange
+            default:
+                return .gray
             }
         }
 }
