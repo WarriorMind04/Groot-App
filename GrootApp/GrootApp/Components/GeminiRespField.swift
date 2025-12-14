@@ -20,9 +20,9 @@ struct GeminiRespField: View {
             Text(transvm.explanationn)
                 .padding()
         }
-        .onAppear {
+        /*.onAppear {
             transvm.getExplanation(for: "Camarón que se duerme, se lo lleva la corriente")
-        }
+        }*/
     }
 }
 

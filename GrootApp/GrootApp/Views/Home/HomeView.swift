@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var transvm = TranslatorViewModel()
+    
     var body: some View {
         VStack{
             AppTextFieldView{ prompt in

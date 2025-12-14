@@ -19,7 +19,7 @@ class CultureViewModel {
     
     init() {
         loadCulture()
-        
+        selectDefaultCountry()
     }
     
     private func loadCulture() {
@@ -37,6 +37,14 @@ class CultureViewModel {
                     //self.isModalPresented = true
                 }
     }
+    
+    // 🔹 Nueva función para seleccionar país por defecto
+        private func selectDefaultCountry() {
+            // Obtener el primer país disponible
+            if let firstCountry = allCategories.first?.country {
+                filterByCountry(firstCountry)
+            }
+        }
     
     func filterByCountry(_ country: String?) {
         selectedCountry = country
