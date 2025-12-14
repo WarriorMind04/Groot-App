@@ -15,15 +15,13 @@ struct ContentView: View {
         
         tabBar()
             .onAppear{
-                //NotificationManager.instance.requestAuthorization()
-                //NotificationManager.instance.scheduleDailyNotification()
                 notifications.requestAuthorization()
                 notifications.scheduleRandomDailyNotifications()
             }
             .sheet(isPresented: $notifications.showModalFromNotification) {
                             NotificationModal()
                         }
-        //NotificationsExample()
+        
     }
     
 }
