@@ -8,7 +8,7 @@
 import Foundation
 
 class GemAPIService {
-    private let baseURL = "https://backend-we-are-groot-dbtmk9sop-jose-miguels-projects-4169b721.vercel.app"
+    private let baseURL = "https://backend-we-are-groot-69intvibp-jose-miguels-projects-4169b721.vercel.app/"
     
     //Matching the functionality of the explain idiom endpoint
     func explainIdiom(idiom: String, completion: @escaping (Result<IdiomExplanation, NetworkError>) -> Void) {
