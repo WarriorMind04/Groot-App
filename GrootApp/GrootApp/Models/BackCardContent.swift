@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct BackCardContent: Identifiable {
+struct BackCardContent: Identifiable, Codable {
     let id = UUID()
     let type: BackCardType
     let title: String

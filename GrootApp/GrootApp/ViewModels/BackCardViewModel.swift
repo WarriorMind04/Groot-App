@@ -11,29 +11,29 @@ import Foundation
 class BackCardViewModel {
     
     var currentContent: BackCardContent?
+    private(set) var contents: [BackCardContent] = []
     
-    private let contents: [BackCardContent] = [
-        BackCardContent(
-            type: .challenge,
-            title: "Challenge",
-            text: "Go and ask for a coffee in Italian ☕️"
-        ),
-        BackCardContent(
-            type: .funFact,
-            title: "Fun Fact",
-            text: "In Italy, cappuccino is only drunk in the morning 🇮🇹"
-        ),
-        BackCardContent(
-            type: .suggestion,
-            title: "Suggestion",
-            text: "Try greeting people with a light cheek kiss in Italy 🤝"
-        ),
-        BackCardContent(
-            type: .funFact,
-            title: "Fun Fact",
-            text: "In Japan, slurping noodles is a compliment 🍜"
-        )
-    ]
+    init() {
+        loadData()
+    }
+   
+    
+    private func loadData() {
+        guard let url = Bundle.main.url(forResource: "flashcarddata", withExtension: "json") else {
+                print("❌ JSON file not found")
+                return
+            }
+
+            do {
+                let data = try Data(contentsOf: url)
+                let decoded = try JSONDecoder().decode([BackCardContent].self, from: data)
+                contents = decoded
+                currentContent = contents.randomElement()
+                print("✅ Loaded \(contents.count) cards")
+            } catch {
+                print("❌ Error decoding JSON:", error)
+            }
+    }
     
     func randomize() {
         currentContent = contents.randomElement()
