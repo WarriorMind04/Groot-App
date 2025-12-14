@@ -18,8 +18,8 @@ struct CultureView: View {
             // 🔹 Selector de país
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    Button("All") { viewModel.filterByCountry(nil) }
-                        .buttonStyle(PrimaryButtonStyle(selected: viewModel.selectedCountry == nil))
+                    /*Button("All") { viewModel.filterByCountry(nil) }
+                        .buttonStyle(PrimaryButtonStyle(selected: viewModel.selectedCountry == nil))*/
                     
                     ForEach(Array(Set(viewModel.allCategories.map { $0.country })), id: \.self) { country in
                         Button(country) {

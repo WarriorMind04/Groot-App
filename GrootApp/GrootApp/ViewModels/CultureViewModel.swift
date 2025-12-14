@@ -19,6 +19,7 @@ class CultureViewModel {
     
     init() {
         loadCulture()
+        
     }
     
     private func loadCulture() {
@@ -31,6 +32,10 @@ class CultureViewModel {
         }
         allCategories = decoded.categories
         filteredCategories = allCategories
+        if let first = filteredCategories.first {
+                    self.selectedCategory = first
+                    //self.isModalPresented = true
+                }
     }
     
     func filterByCountry(_ country: String?) {
