@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		745503132EDF029C0040CB07 /* Galaxy Culture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galaxy Culture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		745503132EDF029C0040CB07 /* BeLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7495BD6B2EEEC3D2003ECC79 /* GrootWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrootWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7495BD6D2EEEC3D2003ECC79 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		7495BD6F2EEEC3D2003ECC79 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -52,7 +52,7 @@
 			);
 			target = 7495BD6A2EEEC3D2003ECC79 /* GrootWidgetExtension */;
 		};
-		7495BD922EEEC7EE003ECC79 /* Exceptions for "GrootWidget" folder in "Galaxy Culture" target */ = {
+		7495BD922EEEC7EE003ECC79 /* Exceptions for "GrootWidget" folder in "BeLocal" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FunFactWidget/FunFactEntry.swift,
@@ -62,7 +62,7 @@
 				Models/FunFactWidM.swift,
 				Services/FunFactStore.swift,
 			);
-			target = 745503122EDF029C0040CB07 /* Galaxy Culture */;
+			target = 745503122EDF029C0040CB07 /* BeLocal */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -75,7 +75,7 @@
 		7495BD712EEEC3D2003ECC79 /* GrootWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				7495BD922EEEC7EE003ECC79 /* Exceptions for "GrootWidget" folder in "Galaxy Culture" target */,
+				7495BD922EEEC7EE003ECC79 /* Exceptions for "GrootWidget" folder in "BeLocal" target */,
 				7495BD852EEEC3D2003ECC79 /* Exceptions for "GrootWidget" folder in "GrootWidgetExtension" target */,
 			);
 			path = GrootWidget;
@@ -117,7 +117,7 @@
 		745503142EDF029C0040CB07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				745503132EDF029C0040CB07 /* Galaxy Culture.app */,
+				745503132EDF029C0040CB07 /* BeLocal.app */,
 				7495BD6B2EEEC3D2003ECC79 /* GrootWidgetExtension.appex */,
 			);
 			name = Products;
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		745503122EDF029C0040CB07 /* Galaxy Culture */ = {
+		745503122EDF029C0040CB07 /* BeLocal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7455031E2EDF029D0040CB07 /* Build configuration list for PBXNativeTarget "Galaxy Culture" */;
+			buildConfigurationList = 7455031E2EDF029D0040CB07 /* Build configuration list for PBXNativeTarget "BeLocal" */;
 			buildPhases = (
 				7455030F2EDF029C0040CB07 /* Sources */,
 				745503102EDF029C0040CB07 /* Frameworks */,
@@ -152,11 +152,11 @@
 			fileSystemSynchronizedGroups = (
 				745503152EDF029C0040CB07 /* GrootApp */,
 			);
-			name = "Galaxy Culture";
+			name = BeLocal;
 			packageProductDependencies = (
 			);
 			productName = GrootApp;
-			productReference = 745503132EDF029C0040CB07 /* Galaxy Culture.app */;
+			productReference = 745503132EDF029C0040CB07 /* BeLocal.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7495BD6A2EEEC3D2003ECC79 /* GrootWidgetExtension */ = {
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7455030E2EDF029C0040CB07 /* Build configuration list for PBXProject "Galaxy Culture" */;
+			buildConfigurationList = 7455030E2EDF029C0040CB07 /* Build configuration list for PBXProject "BeLocal" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				745503122EDF029C0040CB07 /* Galaxy Culture */,
+				745503122EDF029C0040CB07 /* BeLocal */,
 				7495BD6A2EEEC3D2003ECC79 /* GrootWidgetExtension */,
 			);
 		};
@@ -404,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.GrootApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.belocal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -437,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.GrootApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.belocal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -514,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7455030E2EDF029C0040CB07 /* Build configuration list for PBXProject "Galaxy Culture" */ = {
+		7455030E2EDF029C0040CB07 /* Build configuration list for PBXProject "BeLocal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7455031C2EDF029D0040CB07 /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7455031E2EDF029D0040CB07 /* Build configuration list for PBXNativeTarget "Galaxy Culture" */ = {
+		7455031E2EDF029D0040CB07 /* Build configuration list for PBXNativeTarget "BeLocal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7455031F2EDF029D0040CB07 /* Debug */,
