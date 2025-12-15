@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "745503122EDF029C0040CB07"
-               BuildableName = "GrootApp.app"
-               BlueprintName = "GrootApp"
-               ReferencedContainer = "container:GrootApp.xcodeproj">
+               BuildableName = "Galaxy Culture.app"
+               BlueprintName = "Galaxy Culture"
+               ReferencedContainer = "container:Galaxy Culture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "745503122EDF029C0040CB07"
-            BuildableName = "GrootApp.app"
-            BlueprintName = "GrootApp"
-            ReferencedContainer = "container:GrootApp.xcodeproj">
+            BuildableName = "Galaxy Culture.app"
+            BlueprintName = "Galaxy Culture"
+            ReferencedContainer = "container:Galaxy Culture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "745503122EDF029C0040CB07"
-            BuildableName = "GrootApp.app"
-            BlueprintName = "GrootApp"
-            ReferencedContainer = "container:GrootApp.xcodeproj">
+            BuildableName = "Galaxy Culture.app"
+            BlueprintName = "Galaxy Culture"
+            ReferencedContainer = "container:Galaxy Culture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -19,7 +19,7 @@
                BlueprintIdentifier = "7495BD6A2EEEC3D2003ECC79"
                BuildableName = "GrootWidgetExtension.appex"
                BlueprintName = "GrootWidgetExtension"
-               ReferencedContainer = "container:GrootApp.xcodeproj">
+               ReferencedContainer = "container:Galaxy Culture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,9 +31,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "745503122EDF029C0040CB07"
-               BuildableName = "GrootApp.app"
-               BlueprintName = "GrootApp"
-               ReferencedContainer = "container:GrootApp.xcodeproj">
+               BuildableName = "Galaxy Culture.app"
+               BlueprintName = "Galaxy Culture"
+               ReferencedContainer = "container:Galaxy Culture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "745503122EDF029C0040CB07"
-            BuildableName = "GrootApp.app"
-            BlueprintName = "GrootApp"
-            ReferencedContainer = "container:GrootApp.xcodeproj">
+            BuildableName = "Galaxy Culture.app"
+            BlueprintName = "Galaxy Culture"
+            ReferencedContainer = "container:Galaxy Culture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -98,9 +98,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "745503122EDF029C0040CB07"
-            BuildableName = "GrootApp.app"
-            BlueprintName = "GrootApp"
-            ReferencedContainer = "container:GrootApp.xcodeproj">
+            BuildableName = "Galaxy Culture.app"
+            BlueprintName = "Galaxy Culture"
+            ReferencedContainer = "container:Galaxy Culture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
