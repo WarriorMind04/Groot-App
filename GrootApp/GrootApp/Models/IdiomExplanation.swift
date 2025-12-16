@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct IdiomExplanation: Decodable {
+struct IdiomExplanation: Codable {
     let explanation: String
 }
+
